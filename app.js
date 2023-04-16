@@ -12,8 +12,8 @@ const options = {
   useUnifiedTopology: true
 };
 mongoose
-  .connect("mongodb://localhost:27017/mean_stack_db", options)
-  // .connect(`mongodb+srv://saran5:${process.env.MONGO_ATLAS_PW}@cluster0.vbozxh7.mongodb.net/mean_stack_db`)
+  // .connect("mongodb://localhost:27017/mean_stack_db", options)
+  .connect(`mongodb+srv://saran5:${process.env.MONGO_ATLAS_PW}@cluster0.vbozxh7.mongodb.net/mean_stack_db`)
   .then(() => {
     console.log("Connected to database!");
   })
